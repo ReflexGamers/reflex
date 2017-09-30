@@ -1,0 +1,9 @@
+{
+  "name": "reflex",
+  "version": "1.0.0",
+  "description": "Discord bot to manage Reflex Gamers Discord",
+  "main": "index.js",
+  "repository": "https://github.com/cedricgc/reflex.git",
+  "author": "Cedric Charly <cedric.charly@gmail.com>",
+  "license": "UNLICENSED"
+}
