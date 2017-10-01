@@ -1,6 +1,11 @@
 {
   "name": "reflex",
   "version": "1.0.0",
+  "scripts": {
+    "postinstall": "tsc -p ./src",
+    "watch": "tsc -w -p ./src",
+    "start": "node ./dist/index.js"
+  },
   "description": "Discord bot to manage Reflex Gamers Discord",
   "main": "index.js",
   "repository": "https://github.com/cedricgc/reflex.git",
