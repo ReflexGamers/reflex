@@ -6,9 +6,9 @@
     "watch": "tsc -w -p ./src",
     "start": "node ./dist/index.js"
   },
-  "description": "Discord bot to manage Reflex Gamers Discord",
+  "description": "Bot to manage Reflex Gamers Discord",
   "main": "index.js",
-  "repository": "https://github.com/cedricgc/reflex.git",
+  "repository": "https://github.com/ReflexGamers/reflex.git",
   "author": "Cedric Charly <cedric.charly@gmail.com>",
   "license": "UNLICENSED",
   "devDependencies": {
