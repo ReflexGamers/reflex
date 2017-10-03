@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "docker-image": "docker build -t reflexgamers/reflex:$(git rev-parse HEAD) .",
-    "postinstall": "tsc -p ./src",
+    "postinstall": "tsc",
     "start": "node ./dist/index.js",
-    "watch": "tsc -w -p ./src"
+    "watch": "tsc -w"
   },
   "description": "Bot to manage Reflex Gamers Discord",
   "main": "index.js",
