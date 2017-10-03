@@ -1,8 +1,8 @@
 import { createLogger } from 'bunyan'
 
 const log = createLogger({
-  name: 'role-manager',
   level: 'debug',
+  name: 'role-manager',
 })
 
 log.info({ foo: 'bar' }, 'application start')
