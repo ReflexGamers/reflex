@@ -1,9 +1,10 @@
+import { config } from './config'
+
 import { createLogger } from 'bunyan'
 
 const log = createLogger({
-  level: 'debug',
-  name: 'role-manager',
+  level: config.logLevel,
+  name: 'reflex',
 })
 
-log.info({ foo: 'bar' }, 'application start')
-log.debug('checking config')
+log.info({ config }, 'application start')
