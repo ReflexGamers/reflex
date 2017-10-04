@@ -2,17 +2,11 @@
 # yarn lockfile v1
 
 
-"@types/bunyan@1.8":
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/@types/bunyan/-/bunyan-1.8.3.tgz#e4ec4b4e11ed9c80fb8c1addc05bb37aa3d2fbad"
-  dependencies:
-    "@types/node" "*"
-
 "@types/joi@10.4":
   version "10.4.3"
   resolved "https://registry.yarnpkg.com/@types/joi/-/joi-10.4.3.tgz#1d82cd9a79194f3dd0685d5d2c220a77a9c0776b"
 
-"@types/node@*", "@types/node@^8.0.32":
+"@types/node@^8.0.32":
   version "8.0.32"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.32.tgz#869a716538b6eec65ab3893f183d557be3cda206"
 

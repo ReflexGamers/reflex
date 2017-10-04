@@ -15,7 +15,6 @@
   "author": "Cedric Charly <cedric.charly@gmail.com>",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@types/bunyan": "1.8",
     "@types/joi": "10.4",
     "@types/node": "^8.0.32",
     "prettier": "1.7.3",
