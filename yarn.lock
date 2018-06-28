@@ -37,9 +37,11 @@ brace-expansion@^1.1.7:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
-bunyan@1.8.12:
-  version "1.8.12"
-  resolved "https://registry.yarnpkg.com/bunyan/-/bunyan-1.8.12.tgz#f150f0f6748abdd72aeae84f04403be2ef113797"
+bunyan@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/bunyan/-/bunyan-2.0.2.tgz#8dbb0feb1a320b9255bc42ba2d4460ad6c045028"
+  dependencies:
+    exeunt "1.1.0"
   optionalDependencies:
     dtrace-provider "~0.8"
     moment "^2.10.6"
@@ -96,6 +98,10 @@ esutils@^1.1.6:
 esutils@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/esutils/-/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
+
+exeunt@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/exeunt/-/exeunt-1.1.0.tgz#af72db6f94b3cb75e921aee375d513049843d284"
 
 fs.realpath@^1.0.0:
   version "1.0.0"
