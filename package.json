@@ -2,11 +2,10 @@
   "name": "reflex",
   "version": "1.0.0",
   "scripts": {
-    "docker-image":
-      "docker build -t reflexgamers/reflex:$(git rev-parse HEAD) .",
-    "lint": "$(yarn bin)/tslint --config tslint.json 'src/**/*.ts'",
-    "postinstall": "tsc",
-    "prettier": "$(yarn bin)/prettier --write 'src/**/*.ts'",
+    "build": "tsc",
+    "docker-image": "docker build -t reflexgamers/reflex:$(git rev-parse HEAD) .",
+    "lint": "tslint --config tslint.json 'src/**/*.ts'",
+    "prettier": "prettier --write 'src/**/*.ts'",
     "start": "node ./dist/index.js",
     "watch": "tsc -w"
   },
