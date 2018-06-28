@@ -15,7 +15,6 @@
   "author": "Cedric Charly <cedric.charly@gmail.com>",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@types/joi": "10.4",
     "@types/node": "^8.0.32",
     "prettier": "1.13.6",
     "tslint": "^5.7.0",
@@ -25,6 +24,6 @@
   },
   "dependencies": {
     "bunyan": "2.0.2",
-    "joi": "10.4.2"
+    "joi": "13.4.0"
   }
 }
