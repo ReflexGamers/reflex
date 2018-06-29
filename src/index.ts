@@ -11,8 +11,6 @@ const client = new Client();
 
 log.info({ config }, 'application start');
 
-client.login(config.discordBotToken);
-
 // Ensure discord.js websocket is ready
 client.on('ready', () => {
   log.info({ user: client.user.tag }, 'connected to discord');
@@ -23,3 +21,6 @@ client.on('ready', () => {
     log.info('starting member reconciliation');
   }, reconciliationInterval);
 });
+
+// Bring bot online after setting up handlers
+client.login(config.discordBotToken);
