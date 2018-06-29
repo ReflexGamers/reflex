@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "bunyan": "2.0.2",
+    "discord.js": "^11.3.2",
     "husky": "^1.0.0-rc.9",
     "joi": "13.4.0",
     "lint-staged": "^7.2.0"
