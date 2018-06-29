@@ -1,6 +1,11 @@
 import * as joi from 'joi';
 
 const schema = joi.object({
+  CHECK_INTERVAL_SECONDS: joi
+    .number()
+    .integer()
+    .positive()
+    .default(300),
   DISCORD_BOT_TOKEN: joi.string().required(),
   FORUM_DATABASE_URI: joi
     .string()
@@ -20,6 +25,7 @@ if (error) {
 }
 
 export const config = {
+  checkIntervalSeconds: configVars.CHECK_INTERVAL_SECONDS,
   discordBotToken: configVars.DISCORD_BOT_TOKEN,
   forumDatabaseURI: configVars.FORUM_DATABASE_URI,
   logLevel: configVars.LOG_LEVEL,
