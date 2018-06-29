@@ -7,6 +7,7 @@ const schema = joi.object({
     .positive()
     .default(300),
   DISCORD_BOT_TOKEN: joi.string().required(),
+  DISCORD_TARGET_GUILD_ID: joi.string().required(),
   FORUM_DATABASE_URI: joi
     .string()
     .uri({ scheme: ['mysql'] })
@@ -27,6 +28,7 @@ if (error) {
 export const config = {
   checkIntervalSeconds: configVars.CHECK_INTERVAL_SECONDS,
   discordBotToken: configVars.DISCORD_BOT_TOKEN,
+  discordTargetGuildID: configVars.DISCORD_TARGET_GUILD_ID,
   forumDatabaseURI: configVars.FORUM_DATABASE_URI,
   logLevel: configVars.LOG_LEVEL,
 };
