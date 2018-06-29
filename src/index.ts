@@ -17,10 +17,22 @@ client.on('ready', () => {
 
   // setInterval takes time in miliseconds
   const reconciliationInterval: number = config.checkIntervalSeconds * 1000;
-  client.setInterval(() => {
-    log.info('starting member reconciliation');
-  }, reconciliationInterval);
+  client.setInterval(reconcileMembers, reconciliationInterval);
 });
+
+function reconcileMembers() {
+  log.info('starting member reconciliation');
+
+  const guilds = client.guilds.array();
+  log.debug(
+    {
+      guilds: guilds.map((guild) => {
+        return { name: guild.name, id: guild.id };
+      }),
+    },
+    'guilds connected to',
+  );
+}
 
 // Bring bot online after setting up handlers
 client.login(config.discordBotToken);
