@@ -24,14 +24,24 @@ function reconcileMembers() {
   log.info('starting member reconciliation');
 
   const guilds = client.guilds.array();
-  log.debug(
-    {
-      guilds: guilds.map((guild) => {
-        return { name: guild.name, id: guild.id };
-      }),
-    },
-    'guilds connected to',
-  );
+  log.debug({ guilds }, 'guilds connected to');
+
+  const targetGuild = guilds.find((guild) => {
+    return guild.id === config.discordTargetGuildID;
+  });
+  if (targetGuild === undefined) {
+    log.error(
+      { guildID: config.discordTargetGuildID },
+      'failed to get target guild. Has it been invited to the guild?',
+    );
+
+    return;
+  }
+
+  const discordMembers = targetGuild.members.array().map((user) => {
+    return user.user;
+  });
+  log.debug({ memberCount: discordMembers.length }, 'guild members');
 }
 
 // Bring bot online after setting up handlers
